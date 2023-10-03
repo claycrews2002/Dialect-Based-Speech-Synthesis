@@ -2,7 +2,7 @@
 
 This is a course project for CSCE 585. We are focusing on the development of a dialect based speech synthesis model.
 
-
+We found Coqui-TTS as a starting point for our research. This repository was chosen because of the easy access to pre-trained models and a python API to quickly implement our initial testing.
 
 ## Coqui-TTS
 [Coqui TTS GitHub Repository](https://github.com/coqui-ai/tts)
@@ -12,7 +12,7 @@ This is a course project for CSCE 585. We are focusing on the development of a d
 pip install TTS
 ```
 
-### Voice Conversion
+### Voice Generation
 At this point we are interested in using a pre-trained model to do voice conversion.
 
 This is a simple use case of the TTS functionality to generate an audio file from a pre-trained model.
@@ -32,6 +32,7 @@ tts.tts_to_file(text="This is an example sentence using the LJ Speech dataset on
 
 Listen to generated example audio, [here](example_output.wav)
 
+### Voice Conversion
 
 Our goal is to generate audio in the dialect of Southern White English(SWE) and African American English(AAE). An audio sample from the podcast 'Southern Fried True Crime' was chosen as the speaker displays characteristics of a SWE speaking dialect. 
 
@@ -45,6 +46,33 @@ tts.voice_conversion_to_file(source_wav="/example_output.wav", target_wav="woman
 ```
 
 Listen to voice conversion audio example, [here](conversion_example_output.wav)
+
+## Papers and Methods Examined
+
+### Spectogram Models
+- [Tacotron](https://arxiv.org/abs/1703.10135)
+- [Tacotron2](https://arxiv.org/abs/1712.05884)
+
+### Attention Methods
+- [Guided Attention](https://arxiv.org/abs/1710.08969)
+
+### Vocoders
+- [MelGAN](https://arxiv.org/abs/1910.06711)
+- [WaveRNN](https://github.com/fatchord/WaveRNN/)
+
+### Voice Conversion
+- [FreeVC](https://arxiv.org/abs/2210.15418)
+
+
+## Next Steps
+
+We will continue to read papers on various architectures sourrounding speech synthesis.
+
+The direction we plan to take our research is to create a model that compares to [FreeVC](https://arxiv.org/abs/2210.15418) yielding better results. Different architectures and implementations will be examined to achieve this goal. 
+
+Processing the input data of the target speaker's voice, dialect, and speaking style will be necessary attributes of the audio to draw attention to. 
+
+Creating a more efficient voice conversion model would eliminate the need for long training times and effectively produce clear and accurate results comapred to the target speaker's voice.
 
 
 
