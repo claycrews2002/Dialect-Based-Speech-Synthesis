@@ -2,6 +2,11 @@
 
 This is a course project for CSCE 585. We are focusing on the development of a dialect based speech synthesis model.
 
+## Project Milestones
+- [Proposal](https://github.com/claycrews2002/Dialect-Based-Speech-Synthesis/blob/aad98979f4374c79ca33ff970e02ec136c378eb1/CSCE585%20-%20Wordification%20Proposal.pdf)
+- [Milestone 1](https://github.com/claycrews2002/Dialect-Based-Speech-Synthesis/blob/aad98979f4374c79ca33ff970e02ec136c378eb1/CSCE585%20-%20Wordification%20Project%20Milestone%201.pdf)
+
+
 We found Coqui-TTS as a starting point for our research. This repository was chosen because of the easy access to pre-trained models and a python API to quickly implement our initial testing.
 
 ## Coqui-TTS
